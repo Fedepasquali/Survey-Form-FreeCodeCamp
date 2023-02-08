@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">Encuesta literaria</h1>
+<p id="description"> Nos interesa saber mas sobre tus habitos de lectura</p>
+<form id="survey-form">
+  <div class="input-element">
+    <label id="name-label">
+    Nombre y apellido
+    </label>
+    <input placeholder="ingresa tu nombre completo" id="name" type="text" required /> 
+  </div>
+    <div class="input-element">
+    <label id="email-label">
+    Email
+    </label>
+    <input placeholder="ingresa tu correo electronico" id="email" type="email" required /> 
+  </div>
+    <div class="input-element">
+    <label id="number-label">
+    Edad
+    </label>
+    <input placeholder="Edad" id="number" min="10" max="100" type="number"  required /> 
+  </div>
+      <div class="input-element">
+    <label id="select-label">
+    ¿Que tan seguido lees?
+    </label>
+    <div>
+    <select id="dropdown">
+      <option>Todos los dias</option>
+      <option>de tres a cinco veces por semana</option>
+      <option>Al menos una vez por semana</option>
+      <option>Al menos una vez al mes</option>
+      <option>Rara vez</option>
+      <option>Nunca</option>
+      </div>
+    </select>
+  </div>
+  <div class="input-element">
+    <label>¿En que momento del dia lees mas?</label>
+    <div>
+    <label><input type="radio" name="momento" value="mañana"/>Mañana</label>
+      </div>
+    <div>
+    <label><input type="radio" name="momento" value="tarde"/>Tarde</label>
+      </div>
+    <div>
+    <label><input type="radio" name="momento" value="noche"/>Noche</label>
+      </div>
+  </div>
+  <div class="input-element">
+    <label>Selecciona tus generos favoritos</label>
+  <div>
+    <label><input type="checkbox" name="genero" value="poesia"/>Poesia</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="romance"/>Romance</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="ciencia-ficcion"/>Ciencia ficcion</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="historia"/>Historia</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="cuentos-infantiles"/>Cuentos Infantiles</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="fantasia"/>Fantasia</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="policiales"/>Policiales</label>
+    </div>
+  <div>
+    <label><input type="checkbox" name="genero" value="otros"/>Otros</label>
+    </div>
+  <div>
+    <label>Contanos mas sobre lo que te gusta leer</label>
+    <textarea placeholder="Autores favoritos, libros favoritos...">
+    </textarea>
+    </div>
+  <button id="submit">
+    Enviar
+    </button>
+</form>
